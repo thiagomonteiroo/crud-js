@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;   
+}
+
+.listItens ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.listItens {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.header i {
+    font-size: 30px;
+}
+
+.header button {
+    position: absolute;
+    right: 20%;
+    margin-top: -30px;
+    border: none;
+    background: transparent;
+}
+
+.list {
+    margin-top: 40px;
+    width: 60%;
+}
+
+.textInsert {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.divInsert {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divLi {
+    margin-top: 1px;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.divLi span {
+    margin-left: 5px;
+    width: 70%;
+    color: dimgray;
+}
+.divLi input {
+    width: 10%;
+    color: dimgray;
+}
+
+.divLi i {
+    font-size: 22px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+}
+
+.closeButton {
+    margin-bottom: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

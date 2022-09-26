@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Compras</title>
+    <link rel="stylesheet" href="compras.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2169/2169836.png">
+</head>
+<body>
+    <div class="list">
+        <div class="header">
+            <h1>Minhas compras</h1>
+            <button><i class="material-icons">add_circle_outline</i></button>
+        </div>
+        <br>
+        <div class="divInsert">
+            <input type="text" placeholder="Nome do produto" class="textInsert" id="name">
+            <input type="number" placeholder="Preço do produto" class="textInsert" id="price">
+            <input type="number" placeholder="Quantidade do produto" class="textInsert" id="quantity">
+        </div>
+        <br>
+        <hr>
+        <div class="listItens"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="divInsert" id="divModal">
+            <input type="text" placeholder="Nome do produto" class="textInsert" id="modalName">
+            <input type="text" placeholder="Preço do produto" class="textInsert" id="modalPrice">
+            <input type="text" placeholder="Quantidade do produto" class="textInsert" id="modalQuantity">
+            <button onclick="submitItem()"><i class="material-icons" id="done">done</i></button>
+            <button onclick="window.location='#fechar';" class="closeButton"><i class="material-icons">highlight_off</i></button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="compras.js"></script> 
+</body>
+</html>
