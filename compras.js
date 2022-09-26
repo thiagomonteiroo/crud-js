@@ -35,7 +35,7 @@ const fieldValidation = () => {
         fieldName.focus()
     } else if (fieldPrice.value.trim() == '') {
         alert('Por favor, preencha o preço')
-        fieldPrice.focus
+        fieldPrice.focus()
     } else if (fieldQuantity.value.trim() == '') {
         alert('Por favor, preencha a quantidade')
         fieldQuantity.focus()
