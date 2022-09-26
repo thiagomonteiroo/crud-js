@@ -47,7 +47,7 @@ const fieldValidation = () => {
 //adicionar item a lista
 const setItemList = () => {
     let aux = create_UUID()
-    itens.push({ 'name': fieldName.value, 'uuid': aux, 'price': fieldPrice.value, 'quantity': fieldQuantity.value})
+    itens.push({ 'name': fieldName.value.trim(), 'uuid': aux, 'price': fieldPrice.value.trim(), 'quantity': fieldQuantity.value.trim()})
     loadItens()
     fieldName.value = ''
     fieldPrice.value = ''
@@ -121,7 +121,7 @@ const submitItem = () => {
     const fieldMPrice = document.querySelector('#modalPrice')
     const fieldMQuantity = document.querySelector('#modalQuantity')
     const uuidOld = itens[index]['uuid']
-    itens.splice(index, 1, { 'name': fieldMName.value, 'uuid': uuidOld, 'price': fieldMPrice.value, 'quantity': fieldMQuantity.value})
+    itens.splice(index, 1, { 'name': fieldMName.value.trim(), 'uuid': uuidOld, 'price': fieldMPrice.value.trim(), 'quantity': fieldMQuantity.value.trim()})
     window.location = '#fechar'
     loadItens()   
 }
